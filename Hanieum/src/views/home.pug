@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style
+            include css/reset.css
+            include css/style.css
+            include css/nickname.css
+            include css/welcome.css
+            include css/video.css
+        title MZ Talk
+    body
+        header
+            h1 MZ Talk
+        main
+            #nickname 
+                h4 이름을 입력해주세요.
+                form
+                    input(placeholder="이름 ", required, type="text")
+            #welcome
+                #welcome_div
+                    div
+                        h4 방 생성및 참여
+                        form
+                            input(placeholder="방 이름", type="text", required)
+                    div
+                        h4 생성된 방
+                        ul
+            #mainRoom
+                #mainRoom_div
+                    #call
+                        #stream1  
+                            video#myFace(autoplay, playsinline, width="400", height="400")
+                            video#peerFace(autoplay, playsinline, width="400", height="400")
+                        //#stream2   
+                            video#myFace(autoplay, playsinline, width="400", height="400")
+                            video#peerFace(autoplay, playsinline, width="400", height="400")
+                        #controller
+                            div
+                                button#mute 음소거
+                                button#camera 카메라 끄기
+                                button#change 아바타 ON
+                                select#cameras
+                    #room
+                        h3
+                        ul 
+                        form
+                            input(placeholder="메시지를 입력하세요.", required, type="text")
+                            button 전송
+
+        script(src="/socket.io/socket.io.js") 
+        script(src="../public/js/app.js") 
+        script(src="../public/js/video.js")

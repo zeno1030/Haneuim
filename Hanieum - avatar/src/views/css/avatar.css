@@ -1,0 +1,35 @@
+#avatar {
+    position:relative;
+    /*border: 10px solid rgb(55, 29, 30); border 박스치기
+    border-radius: 10px;*/
+  }
+  
+  #avatar::after {
+    position: absolute;
+    border-top: 40px solid rgb(55, 29, 30);
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    content: "";
+    top: 0px;
+    left: -50px;
+  }
+  
+  #avatar h2 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(254, 240, 27);
+    background-color: rgb(55, 29, 30);
+    padding: 50px; /*실제 들어간 크기를 제외하고 선택창 모습..*/
+    
+    /*border-radius: 20px;*/
+  }
+
+  #avatar button {
+    color: rgb(55, 29, 30); /* 내부 글 색깔*/
+    padding: 10px 280px;
+    text-align: center;
+    font-size: 40px;
+    background-color: white;
+  }
+  

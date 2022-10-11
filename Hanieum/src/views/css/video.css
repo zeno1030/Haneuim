@@ -1,0 +1,83 @@
+#mainRoom_div {
+  display: flex;
+}
+
+#call {
+  margin-right: 30px;
+}
+
+#stream1 {
+  display: flex;
+}
+
+#controller div button {
+  padding: 10px 8px;
+  background-color: rgb(55, 29, 30);
+  color: rgb(254, 240, 27);
+  border: 1px solid rgb(55, 29, 30);
+  border-radius: 3px;
+}
+
+#controller div select {
+  padding: 10px 8px;
+  background-color: rgb(55, 29, 30);
+  color: rgb(254, 240, 27);
+  border: 1px solid rgb(55, 29, 30);
+  border-radius: 3px;
+}
+
+/*#myFace {
+  border: 3px solid rgb(155 187 212); /*border 박스치기
+}*/
+
+#room {
+  background-color: rgb(155 187 212);
+  border: 3px solid rgb(55, 29, 30); /*border 박스치기*/
+  border-radius: 10px;
+}
+
+#room h3 {
+  color: rgb(55, 29, 30);
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 2px solid rgb(55, 29, 30); /* 중간 선 긋기*/
+}
+
+#room ul { /*채팅 내용*/
+  height: 50vh;
+  background-color: transparent;
+  margin: 15px ;
+  padding: 20px;
+}
+
+#room li {
+  background-color: white;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#room form {
+  padding: 3px;
+}
+
+#room form input {
+  padding: 10px 8px;
+  text-align: center;
+}
+
+#room form input:focus {
+  outline: none;
+}
+
+#room form input:focus::placeholder {
+  color: transparent;
+}
+
+#room form button {
+  padding: 10px;
+  margin-left: 3px;
+  background-color: rgb(254, 240, 27);
+  border: 1px solid rgb(55, 29, 30);
+  border-radius: 3px;
+}

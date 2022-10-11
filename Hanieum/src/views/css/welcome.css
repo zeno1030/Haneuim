@@ -1,0 +1,87 @@
+#welcome_div {
+  position:relative;
+  display: flex;
+  width: 100%;
+}
+
+#welcome_div::after {
+  position: absolute;
+  border-top: 40px solid rgb(55, 29, 30);
+  border-left: 50px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  top: 0px;
+  left: -50px;
+}
+
+#welcome_div div {
+  width: 50%;
+  overflow: hidden;
+}
+
+#welcome_div div::after {
+  position: absolute;
+  border-top: 40px solid rgb(55, 29, 30);
+  border-left: 0px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  top: 0px;
+  right: -50px;
+}
+
+#welcome_div div:first-child {
+  border-right: 3px solid rgb(254, 240, 27); /* 중간 선 긋기*/
+}
+
+#welcome_div div h4 {
+  color: rgb(254, 240, 27);
+  background-color: rgb(55, 29, 30);
+  font-size: 40px;
+  text-align: center;
+  padding: 50px;
+  width: 300px;
+}
+
+#welcome_div div form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#welcome_div div form input {
+  background-color: white;
+  color: rgb(55, 29, 30);
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+#welcome_div div form input:focus {
+  outline: none;
+}
+
+#welcome_div div form input:focus::placeholder {
+  color: transparent;
+}
+
+#welcome_div div form input::placeholder {
+  color: rgb(55, 29, 30);
+  opacity: 0.2;
+}
+
+#welcome_div div ul {
+  border: 1px solid rgb(55, 29, 30);
+  list-style:circle;
+  text-align: center;
+  background-color: white;
+  color: rgb(55, 29, 30);
+  font-size: 30px;
+  padding: 10px;
+}
+
+#welcome_div div ul:focus {
+  outline: none;
+}
